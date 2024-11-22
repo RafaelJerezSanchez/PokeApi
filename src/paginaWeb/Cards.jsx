@@ -1,14 +1,18 @@
+import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import './cards.css'; // Importamos el archivo de estilos
 
 function Tarjeta({ titulo, texto, imagen, botonTexto }) {
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={imagen} />
+    <Card className="pokemon-card">
+      <Card.Img variant="top" src={imagen} className="pokemon-image" />
       <Card.Body>
-        <Card.Title>{titulo}</Card.Title>
-        <Card.Text>{texto}</Card.Text>
-        <Button variant="primary">{botonTexto}</Button>
+        <Card.Title className="pokemon-title">{titulo}</Card.Title>
+        <Card.Text className="pokemon-text">{texto}</Card.Text>
+        <Button variant="primary" className="pokemon-button">
+          {botonTexto}
+        </Button>
       </Card.Body>
     </Card>
   );

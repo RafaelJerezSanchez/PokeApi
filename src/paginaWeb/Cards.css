@@ -1,0 +1,59 @@
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  /* Tarjeta individual */
+  .card {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100%;
+
+  }
+  
+  /* Contenido del cuerpo de la tarjeta */
+  .card-body {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .card-body h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .card-body p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Botón de acción */
+  .card-body button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .card-body button:hover {
+    background-color: #0056b3;
+  }

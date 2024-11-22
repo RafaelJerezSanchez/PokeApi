@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Nav from './Nav';
 import Generacion from './Generacion';
+import Contacto from './Contacto';
 
 function Contenido() {
   return (
@@ -10,18 +11,10 @@ function Contenido() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route
-            path="/gen1"
-            element={<Generacion inicio={1} fin={151} />}
-          />
-          <Route
-            path="/gen2"
-            element={<Generacion inicio={152} fin={251} />}
-          />
-          <Route
-            path="/gen3"
-            element={<Generacion inicio={252} fin={386} />}
-          />
+          <Route path="/gen1" element={<Generacion inicio={1} fin={151} />} />
+          <Route path="/gen2" element={<Generacion inicio={152} fin={251} />} />
+          <Route path="/gen3" element={<Generacion inicio={252} fin={386} />} />
+          <Route path="/contacto/{nombre}" element={<Contacto />} />
         </Routes>
       </main>
     </Router>
