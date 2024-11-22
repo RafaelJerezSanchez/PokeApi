@@ -1,19 +1,9 @@
-.cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin: 20px;
-  }
-  
-  /* Tarjeta individual */
   .card {
     background-color: #f8f9fa;
     border: 1px solid #ddd;
     border-radius: 10px;
     width: 300px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;
   }
   
   .card:hover {
@@ -22,7 +12,10 @@
   
   .card img {
     width: 100%;
-
+    /* padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px; */
   }
   
   /* Contenido del cuerpo de la tarjeta */
@@ -31,18 +24,20 @@
     text-align: center;
   }
   
-  .card-body h3 {
-    font-size: 18px;
-    margin: 10px 0;
+  /* Nombre del Pokemon */
+  .pokemon-title.card-title.h5 {
+    font-size: 25px;
+    margin: 10px;
     color: #333;
   }
   
-  .card-body p {
-    font-size: 14px;
+  /* ID del Pokemon */
+  .pokemon-text.card-text {
+    font-size: 20px;
     color: #555;
   }
   
-  /* Botón de acción */
+  /* Botón de "Ver detalles" */
   .card-body button {
     background-color: #007bff;
     color: white;
@@ -53,7 +48,7 @@
     font-size: 14px;
     margin-top: 10px;
   }
-  
+
   .card-body button:hover {
-    background-color: #0056b3;
+    background-color: #003c7d;
   }
