@@ -1,17 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-
-const contactos = {
-  morgado: {
-    nombre: 'Morgado',
-    avatar: '/Morgui.png',
-  },
-  antonio: {
-    nombre: 'Antonio',
-    avatar: '/Tonio.png',
-  },
-  // Podemos agregar más contactos a continuación
-};
+import { contactos } from './contact'; 
 
 const Contacto = () => {
   const { nombre } = useParams(); 
@@ -23,7 +12,7 @@ const Contacto = () => {
 
   return (
     <div style={{ textAlign: 'center' }}>
-      <h1>Contacto</h1>
+      <h1>{contacto.nombre}</h1>
       <img
         src={contacto.avatar}
         alt={`Avatar de ${contacto.nombre}`}
